@@ -138,7 +138,7 @@
                     +$purchase_line->variations->additional_expense_value_6+$purchase_line->variations->additional_expense_value_7
                     +$purchase_line->variations->additional_expense_value_8+$purchase_line->variations->additional_expense_value_9
                     +$purchase_line->variations->additional_expense_value_10+$purchase_line->variations->additional_expense_value_11
-                    +$purchase_line->variations->additional_expense_value_12/$purchase->exchange_rate, $currency_precision, $currency_details->decimal_separator, $currency_details->thousand_separator)}}
+                    , $currency_precision, $currency_details->decimal_separator, $currency_details->thousand_separator)}}
                 </span>
                 <input type="hidden" class="row_subtotal_before_tax_hidden" value="{{number_format($purchase_line->quantity * $purchase_line->purchase_price/$purchase->exchange_rate, $currency_precision, $currency_details->decimal_separator, $currency_details->thousand_separator)}}">
             </td>
@@ -172,7 +172,7 @@
                                     + $purchase_line->variations->additional_expense_value_6 + $purchase_line->variations->additional_expense_value_7
                                     +$purchase_line->variations->additional_expense_value_8+$purchase_line->variations->additional_expense_value_9
                                     +$purchase_line->variations->additional_expense_value_10+$purchase_line->variations->additional_expense_value_11
-                                    +$purchase_line->variations->additional_expense_value_12/$purchase->exchange_rate, $currency_precision, $currency_details->decimal_separator, $currency_details->thousand_separator)}}">
+                                    , $currency_precision, $currency_details->decimal_separator, $currency_details->thousand_separator)}}">
             </td>
 
             <td class="@if(!session('business.enable_editing_product_from_purchase') || !empty($is_purchase_order)) hide @endif">

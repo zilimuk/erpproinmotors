@@ -309,7 +309,7 @@ $(document).ready(function() {
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
-        var purchase_after_tax = purchase_before_tax + tax;
+        var purchase_after_tax = purchase_before_tax + (additional_extra_expense_3 *0.18);
         var sub_total_after_tax = quantity * purchase_after_tax + total_additional_extra_expense;
 
         row.find('.row_subtotal_before_tax').text(
@@ -385,7 +385,7 @@ $(document).ready(function() {
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
       
-        var purchase_after_tax = purchase_before_tax + tax;
+        var purchase_after_tax = purchase_before_tax + (additional_extra_expense_3 *0.18);
         var sub_total_after_tax = quantity * purchase_after_tax + total_additional_extra_expense;
 
         row.find('.row_subtotal_before_tax').text(
@@ -456,7 +456,7 @@ $(document).ready(function() {
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
-        var purchase_after_tax = purchase_before_tax + tax;
+        var purchase_after_tax = purchase_before_tax + (additional_extra_expense_3 *0.18);
         var sub_total_after_tax = quantity * purchase_after_tax + total_additional_extra_expense;
 
         row.find('.row_subtotal_before_tax').text(
@@ -518,7 +518,7 @@ $(document).ready(function() {
         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         //Purchase price
-        var purchase_after_tax = purchase_before_tax + tax;
+        var purchase_after_tax = purchase_before_tax + (additional_extra_expense_3 *0.18);
         var sub_total_after_tax = quantity * purchase_after_tax + total_additional_extra_expense;
 
         row.find('.purchase_product_unit_tax_text').text(

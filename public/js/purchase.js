@@ -244,8 +244,8 @@ $(document).ready(function() {
                                                  +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         //Calculate sub totals
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
-        var sub_total_after_tax = quantity * purchase_after_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
+        var sub_total_after_tax = quantity * purchase_after_tax + total_additional_extra_expense;
 
         row.find('.row_subtotal_before_tax').text(
             __currency_trans_from_en(sub_total_before_tax, false, true)
@@ -297,7 +297,7 @@ $(document).ready(function() {
             additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
             +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -310,7 +310,7 @@ $(document).ready(function() {
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
         var purchase_after_tax = purchase_before_tax + (additional_extra_expense_3 *0.18);
-        var sub_total_after_tax = quantity * purchase_after_tax +vev;
+        var sub_total_after_tax = quantity * purchase_after_tax + total_additional_extra_expense;
 
         row.find('.row_subtotal_before_tax').text(
             __currency_trans_from_en(sub_total_before_tax, false, true)
@@ -373,7 +373,7 @@ $(document).ready(function() {
       additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
       +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -386,7 +386,7 @@ $(document).ready(function() {
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
       
         var purchase_after_tax = purchase_before_tax + (additional_extra_expense_3 *0.18);
-        var sub_total_after_tax = quantity * purchase_after_tax +vev;
+        var sub_total_after_tax = quantity * purchase_after_tax + total_additional_extra_expense;
 
         row.find('.row_subtotal_before_tax').text(
             __currency_trans_from_en(sub_total_before_tax, false, true)
@@ -435,7 +435,7 @@ $(document).ready(function() {
          additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
          +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
 
         //Update unit cost price before discount
         var discount_percent = __read_number(row.find('input.inline_discounts'), true);
@@ -457,7 +457,7 @@ $(document).ready(function() {
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
         var purchase_after_tax = purchase_before_tax + (additional_extra_expense_3 *0.18);
-        var sub_total_after_tax = quantity * purchase_after_tax +vev;
+        var sub_total_after_tax = quantity * purchase_after_tax + total_additional_extra_expense;
 
         row.find('.row_subtotal_before_tax').text(
             __currency_trans_from_en(sub_total_before_tax, false, true)
@@ -519,7 +519,7 @@ $(document).ready(function() {
 
         //Purchase price
         var purchase_after_tax = purchase_before_tax + (additional_extra_expense_3 *0.18);
-        var sub_total_after_tax = quantity * purchase_after_tax +vev;
+        var sub_total_after_tax = quantity * purchase_after_tax + total_additional_extra_expense;
 
         row.find('.purchase_product_unit_tax_text').text(
             __currency_trans_from_en(tax, false, true)
@@ -560,7 +560,7 @@ $(document).ready(function() {
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_after_tax = purchase_after_tax * quantity +vev;
+        var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -570,7 +570,7 @@ $(document).ready(function() {
                 .data('tax_amount')
         );
         var purchase_before_tax = __get_principle(purchase_after_tax, tax_rate);
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
@@ -632,7 +632,7 @@ $(document).ready(function() {
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_after_tax = purchase_after_tax * quantity +vev;
+        var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -643,7 +643,7 @@ $(document).ready(function() {
         );
        
         var purchase_before_tax = __get_principle(purchase_after_tax, tax_rate);
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
@@ -704,7 +704,7 @@ $(document).ready(function() {
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_after_tax = purchase_after_tax * quantity +vev;
+        var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -714,7 +714,7 @@ $(document).ready(function() {
                 .data('tax_amount')
         );
         var purchase_before_tax = __get_principle(purchase_after_tax, tax_rate);
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
@@ -775,7 +775,7 @@ $(document).ready(function() {
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_after_tax = purchase_after_tax * quantity +vev;
+        var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -785,7 +785,7 @@ $(document).ready(function() {
                 .data('tax_amount')
         );
         var purchase_before_tax = __get_principle(purchase_after_tax, tax_rate);
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
@@ -846,7 +846,7 @@ $(document).ready(function() {
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_after_tax = purchase_after_tax * quantity +vev;
+        var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -856,7 +856,7 @@ $(document).ready(function() {
                 .data('tax_amount')
         );
         var purchase_before_tax = __get_principle(purchase_after_tax, tax_rate);
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
@@ -917,7 +917,7 @@ $(document).ready(function() {
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_after_tax = purchase_after_tax * quantity +vev;
+        var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -927,7 +927,7 @@ $(document).ready(function() {
                 .data('tax_amount')
         );
         var purchase_before_tax = __get_principle(purchase_after_tax, tax_rate);
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
@@ -988,7 +988,7 @@ $(document).ready(function() {
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_after_tax = purchase_after_tax * quantity +vev;
+        var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -998,7 +998,7 @@ $(document).ready(function() {
                 .data('tax_amount')
         );
         var purchase_before_tax = __get_principle(purchase_after_tax, tax_rate);
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
@@ -1059,7 +1059,7 @@ $(document).ready(function() {
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_after_tax = purchase_after_tax * quantity +vev;
+        var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -1069,7 +1069,7 @@ $(document).ready(function() {
                 .data('tax_amount')
         );
         var purchase_before_tax = __get_principle(purchase_after_tax, tax_rate);
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
@@ -1130,7 +1130,7 @@ $(document).ready(function() {
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_after_tax = purchase_after_tax * quantity +vev;
+        var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -1140,7 +1140,7 @@ $(document).ready(function() {
                 .data('tax_amount')
         );
         var purchase_before_tax = __get_principle(purchase_after_tax, tax_rate);
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
@@ -1200,7 +1200,7 @@ $(document).ready(function() {
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_after_tax = purchase_after_tax * quantity +vev;
+        var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -1210,7 +1210,7 @@ $(document).ready(function() {
                 .data('tax_amount')
         );
         var purchase_before_tax = __get_principle(purchase_after_tax, tax_rate);
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
@@ -1270,7 +1270,7 @@ $(document).ready(function() {
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_after_tax = purchase_after_tax * quantity +vev;
+        var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -1280,7 +1280,7 @@ $(document).ready(function() {
                 .data('tax_amount')
         );
         var purchase_before_tax = __get_principle(purchase_after_tax, tax_rate);
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
@@ -1340,7 +1340,7 @@ $(document).ready(function() {
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_after_tax = purchase_after_tax * quantity +vev;
+        var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -1350,7 +1350,7 @@ $(document).ready(function() {
                 .data('tax_amount')
         );
         var purchase_before_tax = __get_principle(purchase_after_tax, tax_rate);
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
@@ -1410,7 +1410,7 @@ $(document).ready(function() {
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
-        var sub_total_after_tax = purchase_after_tax * quantity +vev;
+        var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
         //Tax
         var tax_rate = parseFloat(
@@ -1420,7 +1420,7 @@ $(document).ready(function() {
                 .data('tax_amount')
         );
         var purchase_before_tax = __get_principle(purchase_after_tax, tax_rate);
-        var sub_total_before_tax = quantity * purchase_before_tax +vev;
+        var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
         var additional_tax = additional_extra_expense_12 + (additional_extra_expense_3 *0.18);
         var tax = __calculate_amount('percentage', tax_rate, purchase_before_tax)+ additional_tax;
 
@@ -1753,7 +1753,7 @@ function update_purchase_entry_row_values(row) {
         additional_extra_expense_10+additional_extra_expense_11;
 
 
-        var row_subtotal_before_tax = quantity * unit_cost_price +vev;
+        var row_subtotal_before_tax = quantity * unit_cost_price + total_additional_extra_expense;
 
         var tax_rate = parseFloat(
             $('option:selected', row.find('.purchase_line_tax_id')).attr('data-tax_amount')
@@ -1762,7 +1762,7 @@ function update_purchase_entry_row_values(row) {
         var unit_product_tax = __calculate_amount('percentage', tax_rate, unit_cost_price)+unit_additional_tax;
 
         var unit_cost_price_after_tax = unit_cost_price + unit_product_tax;
-        var row_subtotal_after_tax = quantity * unit_cost_price_after_tax +vev;
+        var row_subtotal_after_tax = quantity * unit_cost_price_after_tax + total_additional_extra_expense;
 
         row.find('.row_subtotal_before_tax').text(
             __currency_trans_from_en(row_subtotal_before_tax, false, true)
@@ -1912,7 +1912,7 @@ function update_table_total() {
     $('#total_quantity').text(__number_f(total_quantity, false));
     $('#total_st_before_tax').text(__currency_trans_from_en(total_st_before_tax, true, true));
     __write_number($('input#st_before_tax_input'), total_st_before_tax, true);
-   //$total_subtotal = total_subtotal +vev;
+   //$total_subtotal = total_subtotal + total_additional_extra_expense;
   
     $('#total_subtotal').text(__currency_trans_from_en(total_subtotal, true, true));
     __write_number($('input#total_subtotal_input'), total_subtotal, true);

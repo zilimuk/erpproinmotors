@@ -241,7 +241,7 @@ $(document).ready(function() {
         
             var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
                                                  additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-                                                 +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+                                                 +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         //Calculate sub totals
         var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
@@ -295,7 +295,7 @@ $(document).ready(function() {
 
             var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
             additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-            +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+            +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
 
@@ -371,7 +371,7 @@ $(document).ready(function() {
   
       var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
       additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-      +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+      +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
 
@@ -433,7 +433,7 @@ $(document).ready(function() {
      
          var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
          additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+         +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_before_tax = quantity * purchase_before_tax + total_additional_extra_expense;
 
@@ -515,7 +515,7 @@ $(document).ready(function() {
    
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         //Purchase price
         var purchase_after_tax = purchase_before_tax + tax;
@@ -558,7 +558,7 @@ $(document).ready(function() {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
@@ -630,7 +630,7 @@ $(document).ready(function() {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
@@ -702,7 +702,7 @@ $(document).ready(function() {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
@@ -773,7 +773,7 @@ $(document).ready(function() {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
@@ -844,7 +844,7 @@ $(document).ready(function() {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
@@ -915,7 +915,7 @@ $(document).ready(function() {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
@@ -986,7 +986,7 @@ $(document).ready(function() {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
@@ -1057,7 +1057,7 @@ $(document).ready(function() {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
@@ -1128,7 +1128,7 @@ $(document).ready(function() {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
@@ -1198,7 +1198,7 @@ $(document).ready(function() {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
@@ -1268,7 +1268,7 @@ $(document).ready(function() {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
@@ -1338,7 +1338,7 @@ $(document).ready(function() {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
@@ -1408,7 +1408,7 @@ $(document).ready(function() {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
         var sub_total_after_tax = purchase_after_tax * quantity + total_additional_extra_expense;
 
@@ -1750,7 +1750,7 @@ function update_purchase_entry_row_values(row) {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8+additional_extra_expense_9
-        additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        additional_extra_expense_10+additional_extra_expense_11;
 
 
         var row_subtotal_before_tax = quantity * unit_cost_price + total_additional_extra_expense;
@@ -1903,7 +1903,7 @@ function update_table_total() {
     
         var total_additional_extra_expense = additional_extra_expense_1+additional_extra_expense_2+additional_extra_expense_3+additional_extra_expense_4+
         additional_extra_expense_5+additional_extra_expense_6+additional_extra_expense_7+additional_extra_expense_8
-        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11+additional_extra_expense_12;
+        +additional_extra_expense_9+additional_extra_expense_10+additional_extra_expense_11;
 
             total_subtotal += __read_number($(this).find('.row_subtotal_after_tax_hidden'), true);
             tax += __read_number($(this).find('.purchase_product_unit_tax'),true);

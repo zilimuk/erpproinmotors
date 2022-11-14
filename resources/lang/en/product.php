@@ -60,7 +60,7 @@ return [
     'file_imported_successfully' => 'File imported successfully',
     'extra_charges_1' => 'Vehicle battery',
     'extra_charges_2' => 'Storage',
-    'extra_charges_3' => 'Port Handling charges VAT Inc',
+    'extra_charges_3' => 'Port Handling charges VAT Exc',
     'extra_charges_4' => 'Duties and taxes',
     'extra_charges_5' => 'TBS',
     'extra_charges_6' => 'Fuel & Driver_Mileage',

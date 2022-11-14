@@ -950,8 +950,7 @@ public function createQuickSingleProductVariation($product, $sku, $purchase_pric
                                         $variation_details->additional_expense_value_8,
                                         $variation_details->additional_expense_value_9,
                                         $variation_details->additional_expense_value_10,
-                                        $variation_details->additional_expense_value_11,
-                                        $variation_details->additional_expense_value_12
+                                        $variation_details->additional_expense_value_11
                                          ])->sum();
     //    $total_new_additional_extra_cost = collect([
     //                                         $variation_data['additional_expense_value_1'],
@@ -1362,8 +1361,7 @@ public function createQuickSingleProductVariation($product, $sku, $purchase_pric
                 $variation_details->additional_expense_value_8,
                 $variation_details->additional_expense_value_9,
                 $variation_details->additional_expense_value_10,
-                $variation_details->additional_expense_value_11,
-                $variation_details->additional_expense_value_12
+                $variation_details->additional_expense_value_11
                  ])->sum();
             //   dd($variation_details);   
             // $total_new_additional_extra_cost = collect([
